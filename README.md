@@ -56,6 +56,9 @@ Switch HEAD branch
 Create a new branch based on your current HEAD
   $ git branch <new-branch>
 
+Push local branch to origin
+  $ git push origin <new-branch>
+
 Rename branch (Important: All the associated PRs will be closed moment you run push command)
   $ git branch -m <old-branch> <new-branch>
   $ git push origin :<old-branch> <new-branch>
