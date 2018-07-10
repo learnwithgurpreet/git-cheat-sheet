@@ -118,6 +118,9 @@ Use your configured merge tool to solve conflicts
 Use your editor to manually solve conflicts and (after resolving) mark file as resolved
   $ git add <resolved-file>
   $ git rm <resolved-file>
+
+When you face problem with so many branches and you can't get update of them, please use following command
+  $ git gc --prune=now
 ```
 
 ##### UNDO
