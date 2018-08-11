@@ -50,6 +50,9 @@ Who changed what and when in <file>
 List all existing branches
   $ git branch -av
 
+Fetch all origin branches on local
+  $ git branch -r | grep -v '\->' | while read remote; do git branch --track "${remote#origin/}" "$remote"; done
+
 Switch HEAD branch
   $ git checkout <branch>
 
