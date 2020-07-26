@@ -45,6 +45,16 @@ Show changes over time for a specific file
 Who changed what and when in <file>
   $ git blame <file>
 ```
+##### CHERRY PICKING
+```
+You can cherry pick you changes from any commit ID
+Syntax
+  git cherry-pick [--edit] [-n] [-m parent-number] [-s] [-x] [--ff] [-S[<keyid>]] <commit>
+  git cherry-pick (--continue | --skip | --abort | --quit)
+
+Example
+  git cherry-pick afs865a8sd9 // This will create new branch having <afs865a8sd9> commit ID changes
+```
 ##### BRANCHES & TAGS
 ```
 List all existing branches
@@ -137,11 +147,12 @@ Discard local changes in a specific file
 Revert a commit (by producing a new commit with contrary changes)
   $ git revert <commit>
 
-Reset your HEAD pointer to a previous commit 
-...and discard all changes since then
+Reset your HEAD pointer to a previous commit and discard all changes since then
   $ git reset --hard <commit> 
-...and preserve all changes as unstaged changes
+
+Preserve all changes as un-staged changes
   $ git reset <commit>
-...and preserve uncommitted local changes
+
+Preserve uncommitted local changes
  $ git reset --keep <commit>
 ```
